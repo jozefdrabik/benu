@@ -37,6 +37,7 @@
 
 <script lang="ts">
 import SVGComponent from "@/components/SVGComponent.vue";
+import type { Section } from "@/types/footer.ts";
 
 export default {
   components: { SVGComponent },
@@ -100,7 +101,7 @@ export default {
             },
           ],
         },
-      ],
+      ] as Section[],
     };
   },
 };
